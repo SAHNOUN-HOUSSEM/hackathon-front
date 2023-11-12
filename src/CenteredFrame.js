@@ -42,7 +42,7 @@ const CenteredFrame = () => {
 
   const buttonData = [
     {
-      buttonText: "🧑🏻‍⚕️s'inscrire tant que médecin",
+      buttonText: "🧑🏻‍⚕️s'inscrire tant que Médecin",
       formFields: [
         { name: "nom", label: "Nom", required: true },
         { name: "prenom", label: "Prénom", required: true },
@@ -50,7 +50,7 @@ const CenteredFrame = () => {
         { name: "telephone", label: "Téléphone", required: true },
         { name: "carte d'identité", label: "carte d'identité", required: true },
         { name: "hopital", label: "Hôpital", required: true },
-        { name: "email", label: "Email", type: "email" },
+        { name: "email", label: "E-mail", type: "email" },
         {
           name: "motDePasse",
           label: "Mot de passe",
@@ -65,7 +65,7 @@ const CenteredFrame = () => {
       ],
     },
     {
-      buttonText: "⚕️s'inscrire tant que étudiant",
+      buttonText: "⚕️s'inscrire tant que Etudiant",
       formFields: [
         { name: "nom", label: "Nom", required: true },
         { name: "prenom", label: "Prénom", required: true },
@@ -77,7 +77,7 @@ const CenteredFrame = () => {
           label: "Faculté",
           required: true,
         },
-        { name: "email", label: "Email", type: "email" },
+        { name: "email", label: "E-mail", type: "email" },
         {
           name: "motDePasse",
           label: "Mot de passe",
@@ -93,12 +93,44 @@ const CenteredFrame = () => {
       ],
     },
     {
-      buttonText: "🙍🏻 s'incrire tant que patient",
+      buttonText: "🙍🏻 s'incrire tant que Patient",
       formFields: [
         { name: "nom", label: "Nom", required: true },
         { name: "prenom", label: "Prénom", required: true },
-        { name: "email", label: "Email", type: "email" },
+        { name: "email", label: "E-mail", type: "email" },
         { name: "lieu", label: "Lieu", required: true },
+        { name: "telephone", label: "Téléphone", required: true },
+        {
+          name: "motDePasse",
+          label: "Mot de passe",
+          type: "password",
+          required: true,
+        },
+      ],
+    },
+    {
+      buttonText: "🏥 s'incrire tant que Hopital",
+      formFields: [
+        {
+          name: "Nom du responsable",
+          label: "Nom du responsable",
+          required: true,
+        },
+        {
+          name: "Nom de l'établissemnet médicale",
+          label: "Nom de l'établissemnet médicale",
+          required: true,
+        },
+        {
+          name: "e-mail de l'administration",
+          label: "E-mail de l'administration",
+          type: "email",
+        },
+        {
+          name: "localisation",
+          label: "Localisation (avec exactitude)",
+          required: true,
+        },
         { name: "telephone", label: "Téléphone", required: true },
         {
           name: "motDePasse",
@@ -113,7 +145,7 @@ const CenteredFrame = () => {
       formFields: [
         { name: "nom", label: "Nom", required: true },
         { name: "prénom", label: "Prénom", required: true },
-        { name: "email", label: "Email", type: "email" },
+        { name: "email", label: "E-mail", type: "email" },
         {
           name: "motDePasse",
           label: "Mot de passe",

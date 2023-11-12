@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   margin: auto; /* Ajoutez cette propriété pour centrer horizontalement */
-  max-width: 70%; /* Définit une largeur maximale pour le cadre */
+  max-width: 90%; /* Définit une largeur maximale pour le cadre */
 }
 .empty-half h2 {
   font-size: 1.5rem;
@@ -72,7 +72,7 @@ img {
 }
 
 .form-control {
-  width: 75%;
+  width: 85%;
   padding: 5px;
   margin-bottom: 10px;
   box-sizing: border-box;
