@@ -1,0 +1,98 @@
+.centered-frame {
+  display: flex;
+  height: 143vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto; /* Ajoutez cette propriété pour centrer horizontalement */
+  max-width: 70%; /* Définit une largeur maximale pour le cadre */
+}
+.empty-half h2 {
+  font-size: 1.5rem;
+  color: #005e35;
+  text-align: center;
+}
+.photo-half,
+.empty-half {
+  flex: 1;
+  height: 75%;
+  border-radius: 5%;
+}
+
+.photo-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 95%;
+  max-height: 100%;
+  border-radius: 5%;
+}
+
+.empty-half {
+  background-color: antiquewhite;
+  border: 5px solid #005e35; /* Green border */
+  transition: height 0.3s;
+  text-align: center; /* Center the content horizontally */
+  padding-top: 20px; /* Add some top padding for space */
+}
+.empty-half .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-half button {
+  margin: 5px; /* Add margin to space out the buttons */
+  font-size: 16px; /* Adjust font size */
+  padding: 10px 20px; /* Adjust padding */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+.empty-half button.btn-primary {
+  background-color: #005e35; /* Change the background color for primary buttons */
+  border-color: goldenrod; /* Change the border color for primary buttons */
+  color: #fff; /* Change the text color for primary buttons */
+}
+
+.empty-half button.btn-primary:hover {
+  background-color: goldenrod; /* Change the background color on hover for primary buttons */
+  border-color: #0056b3; /* Change the border color on hover for primary buttons */
+  color: #fff; /* Change the text color on hover for primary buttons */
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 75%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.form-container select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.form-label span {
+  color: red;
+  margin-left: 4px;
+}
+.btn-close {
+  background-color: red;
+  color: white;
+  /* Add any additional styling you want */
+}
+.form-label span.green {
+  color: green; /* Green star for additional details */
+  margin-left: 4px;
+}

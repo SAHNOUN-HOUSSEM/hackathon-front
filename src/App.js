@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import CenteredFrame from "./CenteredFrame";
 
-function App() {
+const Navbar = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <nav className="navbar">
+      <div className="slogan-container">
+        <p className="slogan">
+          ░V░O░T░R░E░ ░S░A░N░T░E░ ░,░ ░N░O░T░R░E░ ░R░E░S░P░O░N░S░A░B░I░L░I░T░E░
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <div className="logo-container">
+        <img src="./pictures/logo.png" alt="Logo du site" className="logo" />
+      </div>
+    </nav>
+  );
+};
+
+// Footer component
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <p>&copy; 2023 NOTRE SANTE. All rights reserved.</p>
+    </footer>
+  );
+};
+
+const App = () => {
+  return (
+    <div className="app">
+      <Navbar />
+      <CenteredFrame />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
