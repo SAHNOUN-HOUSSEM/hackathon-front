@@ -1,0 +1,67 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px; /* adjust the logo size as needed */
+  height: auto;
+}
+
+.center-section {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.search-bar {
+  width: 30%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar.css */
+
+/* Navbar.css */
+
+.action-button {
+  padding: 8px 16px;
+  background-color: #fff45b74; /* couleur du bouton */
+  color: #0077f7; /* couleur du texte */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold; /* Rend le texte en gras */
+}
+
+.action-button:first-child {
+  margin-right: 8px; /* Adjust the space between buttons */
+}
+
+/* Add margin to the second button */
+.action-button + .action-button {
+  margin-left: 8px; /* Adjust the space between buttons */
+}
+.action-button + .action-button + .action-button {
+  margin-left: 8px; /* Adjust the space between buttons */
+}

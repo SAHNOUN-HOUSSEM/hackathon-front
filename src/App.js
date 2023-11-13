@@ -1,36 +1,31 @@
 import React from "react";
 import "./App.css";
-import CenteredFrame from "./CenteredFrame";
-
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <div className="slogan-container">
-        <p className="slogan">
-          ░V░O░T░R░E░ ░S░A░N░T░E░ ░,░ ░N░O░T░R░E░ ░R░E░S░P░O░N░S░A░B░I░L░I░T░E░
-        </p>
-      </div>
-      <div className="logo-container">
-        <img src="./pictures/logo.png" alt="Logo du site" className="logo" />
-      </div>
-    </nav>
-  );
-};
-
-// Footer component
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <p>&copy; 2023 NOTRE SANTE. All rights reserved.</p>
-    </footer>
-  );
-};
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import SignUpPage from "./pages/SignUpPage";
+import SignInPage from "./pages/SignInPage";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import HospitalPage from "./pages/HospitalPage";
+import StudentPage from "./pages/StudentPage";
+import PatientPage from "./pages/PatientPage";
+import DoctorPage from "./pages/DoctorPage";
+import MinistryOfHealthPage from "./pages/MinistryPage";
 
 const App = () => {
   return (
     <div className="app">
       <Navbar />
-      <CenteredFrame />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/hospital" element={<HospitalPage />} />
+        <Route path="/student" element={<StudentPage />} />
+        <Route path="/patient" element={<PatientPage />} />
+        <Route path="/doctor" element={<DoctorPage />} />
+        <Route path="/ministry" element={<MinistryOfHealthPage />} />
+      </Routes>
       <Footer />
     </div>
   );

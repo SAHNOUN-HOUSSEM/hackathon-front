@@ -1,0 +1,16 @@
+.ministry-page {
+  /* Définissez la taille de votre image en fonction de vos besoins */
+  width: 100vw;
+  height: 100vh; /* 100% de la hauteur de la vue (viewport height) */
+  background-size: cover; /* Assurez-vous que l'image couvre tout l'espace du conteneur */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  display: flex;
+  align-items: center; /* Centrez le contenu verticalement */
+  justify-content: center; /* Centrez le contenu horizontalement */
+}
+
+.admin-page {
+  max-width: 800px;
+  margin: auto;
+}

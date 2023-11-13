@@ -1,0 +1,33 @@
+.patient-page {
+  /* Définissez la taille de votre image en fonction de vos besoins */
+  width: 100%;
+  height: 100vh; /* 100% de la hauteur de la vue (viewport height) */
+  background-size: cover; /* Assurez-vous que l'image couvre tout l'espace du conteneur */
+  background-position: center; /* Centrez l'image */
+  background-repeat: no-repeat; /* N'affichez l'image qu'une seule fois */
+  display: flex;
+  align-items: center; /* Centrez le contenu verticalement */
+  justify-content: center; /* Centrez le contenu horizontalement */
+}
+.center-table {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fefacc;
+}
+
+th,
+td {
+  border: 1px solid #008a05;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+}

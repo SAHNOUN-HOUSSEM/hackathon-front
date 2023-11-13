@@ -1,0 +1,16 @@
+.list-container {
+  margin-top: 20px;
+}
+
+.custom-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  background-color: #f8f9fa;
+  width: 500px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
