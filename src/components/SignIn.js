@@ -48,6 +48,9 @@ const SignIn = () => {
     } else if (role == 3) {
       // loginStudent(loginData);
       navigate("/hospital");
+    } else if (role == 4) {
+      // loginStudent(loginData);
+      navigate("/ministry");
     }
     // Clear form data and active button
     setFormData({});
@@ -71,7 +74,7 @@ const SignIn = () => {
         name: "role",
         label: "role",
         type: "select",
-        options: ["Médecin", "Etudiant", "Patient", "Hopital"],
+        options: ["Médecin", "Etudiant", "Patient", "Hopital", "Ministry"],
         required: true,
       },
     ],

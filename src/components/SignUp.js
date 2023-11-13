@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { fetchData, getData, postData } from "../api/utilities";
 import "./CenteredFrame.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({});
   const [activeButton, setActiveButton] = useState(null);
   const [success, setSuccess] = useState(false);
@@ -39,7 +40,17 @@ const SignUp = () => {
         password: formData["motDePasse"],
       };
       registerDoctor(doctorData);
+      navigate("/doctor");
+    } else if (activeButton === 1) {
+      navigate("/student");
+    } else if (activeButton === 2) {
+      navigate("/patient");
+    } else if (activeButton === 3) {
+      navigate("/hospital");
     }
+    // else if (activeButton === 1) {
+    //   navigate("/");
+    // }
 
     setSuccess(true);
     // Clear form data and active button
