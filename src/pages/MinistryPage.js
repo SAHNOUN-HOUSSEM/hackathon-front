@@ -18,7 +18,7 @@ const AdminPage = () => {
       {activeList === "doctors" && <DoctorList />}
       {activeList === "institutions" && <InstitutionList />}
       {activeList === "medical-campaigns" && <MedicalCampaignList />}
-      {activeList === "chart" && <MedicalRecordsChart />}
+      {/* {activeList === "chart" && <MedicalRecordsChart />} */}
     </div>
   );
 };
